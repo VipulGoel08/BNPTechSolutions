@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | B.N.P Tech Solutions</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #f8fafc; /* slate-50 */
+        }
+
+        /* Animation System */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+            will-change: transform, opacity;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .delay-100 { transition-delay: 100ms; }
+        .delay-200 { transition-delay: 200ms; }
+        .delay-300 { transition-delay: 300ms; }
+    </style>
+</head>
+
+<body class="text-slate-900 min-h-screen flex flex-col overflow-x-hidden">
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-white shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center gap-2">
+                    <img src="favicon.png" alt="BNP Logo" class="w-10 h-10 rounded-lg">
+                    <div class="flex flex-col">
+                        <span class="text-lg font-bold text-gray-900 leading-none">B.N.P Tech</span>
+                        <span class="text-[9px] font-semibold text-blue-600 uppercase tracking-wider">Solutions</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center font-semibold text-sm text-gray-600">
+                    <a href="index.html" class="hover:text-blue-600 transition-colors">Home</a>
+                    <a href="about.html" class="text-blue-600 font-bold">About</a>
+                    <a href="products.html" class="hover:text-blue-600 transition-colors">Products</a>
+                    <a href="contact.html" class="px-5 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors shadow-md shadow-blue-500/10">Contact</a>
+                </div>
+                <button class="md:hidden p-2 text-gray-600" id="mobile-menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden bg-white border-b border-gray-100 px-6 py-6 space-y-3 shadow-xl">
+            <a href="index.html" class="block text-xl font-bold text-gray-500">Home</a>
+            <a href="about.html" class="block text-xl font-bold text-gray-900">About</a>
+            <a href="products.html" class="block text-xl font-bold text-gray-500">Products</a>
+            <a href="contact.html" class="block text-xl font-bold text-gray-500">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="pt-24 pb-8 bg-slate-900 reveal relative overflow-hidden text-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <h1 class="text-3xl lg:text-4xl font-bold text-white mb-4">About B.N.P Tech Solutions</h1>
+            <p class="text-gray-400 max-w-2xl mx-auto text-base">Specialized in Mining Safety Solutions, Vehicle Cameras, and Sensors.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+                <div>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6 leading-tight reveal">Advanced Safety Technologies</h2>
+                    <p class="text-gray-600 text-base mb-6 leading-relaxed reveal delay-100 italic">
+                        At B.N.P Tech Solutions, we specialize in comprehensive safety systems for the mining and transport industries. Based in Ghaziabad, we provide high-precision vehicle cameras, sensors, and specialized mining safety equipment.
+                    </p>
+                    <p class="text-gray-600 text-base mb-8 leading-relaxed reveal delay-200">
+                        Our experts work tirelessly to bring the latest technological innovations to our clients, ensuring that industrial operations and vehicle fleets are always monitored and protected.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="p-6 bg-white rounded-2xl shadow-md border border-gray-200 reveal delay-300">
+                            <div class="text-3xl font-bold text-blue-600 mb-1">10/10</div>
+                            <div class="text-xs font-bold text-gray-400 uppercase tracking-wider">Safety Standards</div>
+                        </div>
+                        <div class="p-6 bg-white rounded-2xl shadow-md border border-gray-200 reveal delay-300">
+                            <div class="text-3xl font-bold text-blue-600 mb-1">Expert</div>
+                            <div class="text-xs font-bold text-gray-400 uppercase tracking-wider">Team Support</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative reveal delay-300 group">
+                    <img src="images/about-us-img.jpg" alt="Our Team" class="rounded-2xl shadow-lg w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]">
+                    <div class="absolute inset-0 rounded-2xl border-2 border-blue-600/0 group-hover:border-blue-600/10 transition-all duration-700 pointer-events-none"></div>
+                </div>
+            </div>
+
+            <!-- Core Values -->
+            <div class="relative bg-slate-950 rounded-3xl py-12 px-6 lg:px-12 text-white mb-16 overflow-hidden">
+                <!-- Background Decoration -->
+                <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-600/10 via-transparent to-transparent opacity-50"></div>
+                
+                <div class="relative z-10 text-center mb-10">
+                    <h2 class="text-3xl font-bold mb-3 tracking-tight">Our Core Values</h2>
+                    <div class="h-1 w-12 bg-blue-600 mx-auto rounded-full"></div>
+                </div>
+
+                <div class="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Integrity -->
+                    <div class="group relative p-6 bg-white/[0.03] border border-white/10 rounded-2xl transition-all duration-500 hover:bg-white/[0.08] hover:border-blue-500/50">
+                        <div class="mb-5 w-12 h-12 bg-blue-600/10 rounded-xl flex items-center justify-center text-blue-500 group-hover:bg-blue-600 group-hover:text-white transition-all duration-500">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Integrity</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed">Absolute transparency and uncompromising ethical standards in every client interaction.</p>
+                    </div>
+
+                    <!-- Innovation -->
+                    <div class="group relative p-6 bg-white/[0.03] border border-white/10 rounded-2xl transition-all duration-500 hover:bg-white/[0.08] hover:border-blue-500/50">
+                        <div class="mb-5 w-12 h-12 bg-blue-600/10 rounded-xl flex items-center justify-center text-blue-500 group-hover:bg-blue-600 group-hover:text-white transition-all duration-500">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Innovation</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed">Pioneering state-of-the-art monitoring systems and AI-driven sensor technologies.</p>
+                    </div>
+
+                    <!-- Reliability -->
+                    <div class="group relative p-6 bg-white/[0.03] border border-white/10 rounded-2xl transition-all duration-500 hover:bg-white/[0.08] hover:border-blue-500/50">
+                        <div class="mb-5 w-12 h-12 bg-blue-600/10 rounded-xl flex items-center justify-center text-blue-500 group-hover:bg-blue-600 group-hover:text-white transition-all duration-500">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Reliability</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed">Continuous 24/7 technical support and mission-critical hardware assurance.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Company Profile Section -->
+            <div class="mb-12 text-center">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Business Profile</h2>
+                <div class="h-1 w-12 bg-blue-600 rounded-full mx-auto"></div>
+            </div>
+
+            <!-- Highlights Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+                <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-200 text-center">
+                    <h4 class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-1">Business Nature</h4>
+                    <p class="font-bold text-gray-800">Proprietorship</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-200 text-center">
+                    <h4 class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-1">Employees</h4>
+                    <p class="font-bold text-gray-800">Upto 5</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-200 text-center">
+                    <h4 class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-1">Registration</h4>
+                    <p class="font-bold text-gray-800">Jan 2025</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-200 text-center">
+                    <h4 class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-1">Status</h4>
+                    <p class="font-bold text-gray-800">Active</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+                <!-- Basic Information -->
+                <div class="reveal bg-white rounded-3xl p-10 shadow-xl border border-gray-200 group hover:-translate-y-2 transition-all duration-500">
+                    <h3 class="text-2xl font-black text-slate-900 mb-10 flex items-center gap-4">
+                        <span class="w-10 h-10 bg-blue-600 text-white rounded-xl flex items-center justify-center text-sm shadow-lg shadow-blue-500/20">01</span>
+                        Business Profile
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4 group/item">
+                            <div class="w-2 h-2 bg-blue-600 rounded-sm"></div>
+                            <div class="flex-grow">
+                                <span class="text-[10px] font-black text-slate-400 uppercase tracking-widest block mb-1">Nature of Business</span>
+                                <span class="font-bold text-slate-800">Wholesale Trader</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 group/item">
+                            <div class="w-2 h-2 bg-blue-600 rounded-sm"></div>
+                            <div class="flex-grow">
+                                <span class="text-[10px] font-black text-slate-400 uppercase tracking-widest block mb-1">Additional Business</span>
+                                <span class="font-bold text-slate-800">Importer & Exporter</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 group/item">
+                            <div class="w-2 h-2 bg-blue-600 rounded-sm"></div>
+                            <div class="flex-grow">
+                                <span class="text-[10px] font-black text-slate-400 uppercase tracking-widest block mb-1">Legal Status</span>
+                                <span class="font-bold text-slate-800">Individual - Proprietor</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 group/item">
+                            <div class="w-2 h-2 bg-blue-600 rounded-sm"></div>
+                            <div class="flex-grow">
+                                <span class="text-[10px] font-black text-slate-400 uppercase tracking-widest block mb-1">Entity Name</span>
+                                <span class="font-bold text-slate-800">Raj Kishori Devi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Statutory Profile -->
+                <div class="reveal delay-100 bg-slate-900 rounded-3xl p-10 shadow-2xl text-white group hover:-translate-y-2 transition-all duration-500 border border-blue-900/30">
+                    <h3 class="text-2xl font-black mb-10 flex items-center gap-4">
+                        <span class="w-10 h-10 bg-blue-600 text-white rounded-xl flex items-center justify-center text-sm shadow-lg shadow-blue-500/20">02</span>
+                        Statutory Profile
+                    </h3>
+                    <div class="space-y-6 text-slate-300">
+                        <div class="flex items-center gap-4 group/item">
+                            <div class="w-2 h-2 bg-blue-400 rounded-sm"></div>
+                            <div class="flex-grow">
+                                <span class="text-[10px] font-black text-slate-500 uppercase tracking-widest block mb-1">GST Identification</span>
+                                <span class="font-bold text-white font-mono tracking-wider">09CTKPD2029R1Z7</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 group/item">
+                            <div class="w-2 h-2 bg-blue-400 rounded-sm"></div>
+                            <div class="flex-grow">
+                                <span class="text-[10px] font-black text-slate-500 uppercase tracking-widest block mb-1">Taxation Index (PAN)</span>
+                                <span class="font-bold text-white font-mono tracking-wider">CTKPD2029R</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 group/item">
+                            <div class="w-2 h-2 bg-blue-400 rounded-sm"></div>
+                            <div class="flex-grow">
+                                <span class="text-[10px] font-black text-slate-500 uppercase tracking-widest block mb-1">Operational Area</span>
+                                <span class="font-bold text-white">All India Service Access</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-8 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
+            <div class="reveal grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2 flex flex-col items-center md:items-start">
+                    <div class="flex items-center gap-3 mb-3">
+                        <img src="favicon.png" alt="BNP Logo" class="w-8 h-8 rounded-lg brightness-110">
+                        <span class="text-xl font-bold text-white tracking-tighter">B.N.P Tech Solutions</span>
+                    </div>
+                    <p class="max-w-sm text-xs leading-relaxed">Specialized provider of mining safety solutions, vehicle cameras, and advanced sensors.</p>
+                </div>
+                <div class="flex flex-col items-center md:items-start">
+                    <h4 class="text-white font-bold text-[10px] uppercase tracking-[0.2em] mb-4">Navigation</h4>
+                    <ul class="space-y-2 text-xs font-semibold text-slate-500">
+                        <li><a href="index.html" class="hover:text-blue-500 transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-blue-500 transition-colors">About Us</a></li>
+                        <li><a href="products.html" class="hover:text-blue-500 transition-colors">Products</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-500 transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col items-center md:items-start">
+                    <h4 class="text-white font-bold text-[10px] uppercase tracking-[0.2em] mb-4">Contact Intel</h4>
+                    <ul class="space-y-2 text-xs font-medium">
+                        <li>bnptechsolutions@gmail.com</li>
+                        <li>+91 8126062339</li>
+                        <li>Ghaziabad, UP, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 pt-6 border-t border-white/5 text-[10px] font-bold uppercase tracking-[0.2em] text-slate-600 text-center">
+                &copy; 2025 B.N.P Tech Solutions. Operational Since 2025.
+            </div>
+        </div>
+    </footer>
+
+    <script src="products.js"></script>
+    <script src="app.js"></script>
+    <script>
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        window.observer = observer;
+
+        document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+    </script>
+</body>
+
+</html>

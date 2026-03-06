@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | B.N.P Tech Solutions</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #f8fafc; 
+        }
+
+        /* Animation System */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+            will-change: transform, opacity;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .delay-100 { transition-delay: 100ms; }
+        .delay-200 { transition-delay: 200ms; }
+        .delay-300 { transition-delay: 300ms; }
+    </style>
+</head>
+
+<body class="text-slate-900 min-h-screen flex flex-col overflow-x-hidden">
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-white shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center gap-2">
+                    <img src="favicon.png" alt="BNP Logo" class="w-10 h-10 rounded-lg">
+                    <div class="flex flex-col">
+                        <span class="text-lg font-bold text-gray-900 leading-none">B.N.P Tech</span>
+                        <span class="text-[9px] font-semibold text-blue-600 uppercase tracking-wider">Solutions</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center font-semibold text-sm text-gray-600">
+                    <a href="index.html" class="hover:text-blue-600 transition-colors">Home</a>
+                    <a href="about.html" class="hover:text-blue-600 transition-colors">About</a>
+                    <a href="products.html" class="hover:text-blue-600 transition-colors">Products</a>
+                    <a href="contact.html" class="px-4 py-2 bg-blue-50 text-blue-600 rounded-lg border-2 border-blue-500 shadow-lg shadow-blue-500/10 font-bold scale-[1.02]">Contact</a>
+                </div>
+                <button class="md:hidden p-2 text-gray-600" id="mobile-menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden bg-white border-b border-gray-100 px-6 py-6 space-y-3 shadow-xl">
+            <a href="index.html" class="block text-xl font-bold text-gray-500">Home</a>
+            <a href="about.html" class="block text-xl font-bold text-gray-500">About</a>
+            <a href="products.html" class="block text-xl font-bold text-gray-500">Products</a>
+            <a href="contact.html" class="block text-xl font-bold text-gray-900">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="pt-24 pb-8 bg-slate-900 reveal relative overflow-hidden text-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <h1 class="text-3xl lg:text-4xl font-bold text-white mb-4">Contact Us</h1>
+            <p class="text-gray-400 max-w-2xl mx-auto text-base">Get in touch with our team for inquiries and support.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+                
+                <!-- Information Pillar -->
+                <div class="reveal h-full">
+                    <div class="bg-white rounded-[2.5rem] p-10 lg:p-12 shadow-2xl shadow-blue-500/5 border border-gray-200 h-full flex flex-col">
+                        <div class="mb-12">
+                            <h2 class="text-4xl lg:text-5xl font-black text-slate-900 mb-6 tracking-tighter leading-tight">Direct <br><span class="text-blue-600">Communication.</span></h2>
+                            <p class="text-gray-500 text-lg leading-relaxed">Secure channels for technical inquiries, fleet safety consulting, and system support.</p>
+                        </div>
+
+                        <div class="space-y-6 flex-grow">
+                            <div class="group flex items-center gap-6 p-6 bg-slate-50 rounded-2xl border border-transparent transition-all hover:bg-white hover:border-gray-200 hover:shadow-xl hover:shadow-blue-500/5">
+                                <div class="w-14 h-14 bg-blue-600 text-white rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-blue-600/20">
+                                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-[10px] font-black text-blue-600 uppercase tracking-[0.2em] mb-1">Operational Area</h4>
+                                    <p class="text-slate-800 font-bold">Ghookna, Ghaziabad, UP</p>
+                                </div>
+                            </div>
+
+                            <div class="group flex items-center gap-6 p-6 bg-slate-50 rounded-2xl border border-transparent transition-all hover:bg-white hover:border-gray-200 hover:shadow-xl hover:shadow-blue-500/5">
+                                <div class="w-14 h-14 bg-slate-900 text-white rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-slate-900/20">
+                                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] mb-1">Direct Intel</h4>
+                                    <p class="text-slate-800 font-bold">bnptechsolutions@gmail.com</p>
+                                </div>
+                            </div>
+
+                            <div class="group flex items-center gap-6 p-6 bg-slate-50 rounded-2xl border border-transparent transition-all hover:bg-white hover:border-gray-200 hover:shadow-xl hover:shadow-blue-500/5">
+                                <div class="w-14 h-14 bg-white text-blue-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md">
+                                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8l2-2m0 0l2 2m-2-2v10m-6-8a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-[10px] font-black text-blue-400 uppercase tracking-[0.2em] mb-1">Communication Hub</h4>
+                                    <p class="text-slate-800 font-bold">+91 8126062339 / 8802667471</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Inquiry Interface -->
+                <div class="reveal delay-200 h-full">
+                    <div class="relative bg-white rounded-[2.5rem] p-10 lg:p-12 shadow-2xl shadow-blue-500/10 border border-gray-200 overflow-hidden group h-full">
+                        <!-- Decorative element -->
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-blue-50 rounded-bl-[5rem] -mr-16 -mt-16 opacity-50 group-hover:scale-110 transition-transform duration-700"></div>
+                        
+                        <div class="relative z-10 mb-10">
+                            <div class="w-12 h-1 bg-blue-600 rounded-full mb-6"></div>
+                            <h3 class="text-3xl font-black text-slate-900 mb-2">Message Us</h3>
+                        </div>
+
+                        <form action="https://formspree.io/f/mvzwoqpk" method="POST" id="contact-form" class="space-y-8 relative z-10">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div class="space-y-2">
+                                    <label class="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Name</label>
+                                    <input type="text" name="name" required placeholder="Full Name" 
+                                           class="w-full px-6 py-5 bg-slate-50 border-2 border-transparent rounded-2xl focus:border-blue-600 focus:bg-white outline-none transition-all text-sm font-bold placeholder:text-slate-300">
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Email</label>
+                                    <input type="email" name="email" required placeholder="email@address.com" 
+                                           class="w-full px-6 py-5 bg-slate-50 border-2 border-transparent rounded-2xl focus:border-blue-600 focus:bg-white outline-none transition-all text-sm font-bold placeholder:text-slate-300">
+                                </div>
+                            </div>
+
+                            <div class="space-y-2">
+                                <label class="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Subject</label>
+                                <input type="text" name="subject" placeholder="Safety System Requirement" 
+                                       class="w-full px-6 py-5 bg-slate-50 border-2 border-transparent rounded-2xl focus:border-blue-600 focus:bg-white outline-none transition-all text-sm font-bold placeholder:text-slate-300">
+                            </div>
+
+                            <div class="space-y-2">
+                                <label class="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Message</label>
+                                <textarea name="message" rows="5" required placeholder="Describe operational safety requirements..." 
+                                          class="w-full px-6 py-5 bg-slate-50 border-2 border-transparent rounded-2xl focus:border-blue-600 focus:bg-white outline-none transition-all text-sm font-bold placeholder:text-slate-300 resize-none"></textarea>
+                            </div>
+
+                            <button type="submit" class="group relative w-full overflow-hidden rounded-2xl bg-slate-900 py-6 font-black uppercase tracking-[0.2em] text-white shadow-2xl transition-all hover:bg-blue-600 hover:-translate-y-1 active:scale-[0.98]">
+                                <span class="relative z-10 flex items-center justify-center gap-4">
+                                    Send Message
+                                    <svg class="w-5 h-5 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-8 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
+            <div class="reveal grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2 flex flex-col items-center md:items-start">
+                    <div class="flex items-center gap-3 mb-3">
+                        <img src="favicon.png" alt="BNP Logo" class="w-8 h-8 rounded-lg brightness-110">
+                        <span class="text-xl font-bold text-white tracking-tighter">B.N.P Tech Solutions</span>
+                    </div>
+                    <p class="max-w-sm text-xs leading-relaxed">Specialized provider of mining safety solutions, vehicle cameras, and advanced sensors.</p>
+                </div>
+                <div class="flex flex-col items-center md:items-start">
+                    <h4 class="text-white font-bold text-[10px] uppercase tracking-[0.2em] mb-4">Navigation</h4>
+                    <ul class="space-y-2 text-xs font-semibold text-slate-500">
+                        <li><a href="index.html" class="hover:text-blue-500 transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-blue-500 transition-colors">About Us</a></li>
+                        <li><a href="products.html" class="hover:text-blue-500 transition-colors">Products</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-500 transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col items-center md:items-start">
+                    <h4 class="text-white font-bold text-[10px] uppercase tracking-[0.2em] mb-4">Contact Intel</h4>
+                    <ul class="space-y-2 text-xs font-medium">
+                        <li>bnptechsolutions@gmail.com</li>
+                        <li>+91 8126062339</li>
+                        <li>Ghaziabad, UP, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 pt-6 border-t border-white/5 text-[10px] font-bold uppercase tracking-[0.2em] text-slate-600 text-center">
+                &copy; 2025 B.N.P Tech Solutions. Operational Since 2025.
+            </div>
+        </div>
+    </footer>
+
+    <script src="products.js"></script>
+    <script src="app.js"></script>
+    <script>
+        const form = document.getElementById('contact-form');
+        
+        if (form) {
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const btn = form.querySelector('button[type="submit"]');
+                const originalText = btn.innerHTML;
+                
+                btn.disabled = true;
+                btn.innerHTML = `<span class="relative z-10 flex items-center justify-center gap-4">
+                    Sending...
+                    <svg class="animate-spin h-5 w-5" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>
+                </span>
+                <div class="absolute inset-0 bg-blue-600"></div>`;
+                
+                try {
+                    const response = await fetch(form.action, {
+                        method: 'POST',
+                        body: new FormData(form),
+                        headers: { 'Accept': 'application/json' }
+                    });
+                    
+                    if (response.ok) {
+                        btn.innerHTML = `<span class="relative z-10 flex items-center justify-center gap-4">Message sent</span><div class="absolute inset-0 bg-green-600"></div>`;
+                        form.reset();
+                    } else {
+                        throw new Error();
+                    }
+                } catch (error) {
+                    btn.innerHTML = `<span class="relative z-10 flex items-center justify-center gap-4">Message not sent</span><div class="absolute inset-0 bg-red-600"></div>`;
+                    setTimeout(() => {
+                        btn.disabled = false;
+                        btn.innerHTML = originalText;
+                    }, 3000);
+                }
+            });
+        }
+
+        // Animation Script
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        window.observer = observer;
+        document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+    </script>
+</body>
+
+</html>

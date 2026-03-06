@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en" class="overflow-x-hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>B.N.P Tech Solutions | Mining Safety & Vehicle Sensors</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta
+      name="description"
+      content="Premier provider of Mining Safety Solutions, Vehicle Cameras, and Advanced Sensors. B.N.P Tech Solutions ensures maximum safety and monitoring."
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Outfit", sans-serif;
+        background-color: #f8fafc; /* slate-50 */
+      }
+
+      .hero-gradient {
+        background: radial-gradient(circle at top right, #1e3a8a, #0f172a);
+      }
+
+      /* Animation System */
+      .reveal {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+        will-change: transform, opacity;
+      }
+
+      .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .delay-100 {
+        transition-delay: 100ms;
+      }
+      .delay-200 {
+        transition-delay: 200ms;
+      }
+      .delay-300 {
+        transition-delay: 300ms;
+      }
+      .delay-500 {
+        transition-delay: 500ms;
+      }
+
+      /* Smooth reveal for text chars if needed, but keeping it simple for now */
+      .section-accent {
+        background: linear-gradient(90deg, transparent, #3b82f6, transparent);
+        height: 1px;
+        width: 100px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+
+  <body class="text-slate-900 overflow-x-hidden">
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-white shadow-sm border-b border-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 items-center">
+          <div class="flex items-center gap-2">
+            <img
+              src="favicon.png"
+              alt="BNP Logo"
+              class="w-10 h-10 rounded-lg"
+            />
+            <div class="flex flex-col">
+              <span class="text-lg font-bold text-gray-900 leading-none"
+                >B.N.P Tech</span
+              >
+              <span
+                class="text-[9px] font-semibold text-blue-600 uppercase tracking-wider"
+                >Solutions</span
+              >
+            </div>
+          </div>
+          <div
+            class="hidden md:flex space-x-8 items-center font-semibold text-sm text-gray-600"
+          >
+            <a href="index.html" class="text-blue-600">Home</a>
+            <a href="about.html" class="hover:text-blue-600 transition-colors"
+              >About</a
+            >
+            <a
+              href="products.html"
+              class="hover:text-blue-600 transition-colors"
+              >Products</a
+            >
+            <a
+              href="contact.html"
+              class="px-5 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors shadow-md shadow-blue-500/10"
+              >Contact</a
+            >
+          </div>
+          <button class="md:hidden p-2 text-gray-600" id="mobile-menu-btn">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="md:hidden bg-white border-b border-gray-100 px-6 py-6 space-y-3 shadow-xl"
+      >
+        <a href="index.html" class="block text-xl font-bold text-gray-900"
+          >Home</a
+        >
+        <a href="about.html" class="block text-xl font-bold text-gray-500"
+          >About</a
+        >
+        <a href="products.html" class="block text-xl font-bold text-gray-500"
+          >Products</a
+        >
+        <a href="contact.html" class="block text-xl font-bold text-gray-500"
+          >Contact</a
+        >
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="relative pt-24 pb-12 lg:pt-32 lg:pb-24 bg-slate-900 overflow-hidden flex flex-col justify-center"
+    >
+      <div
+        class="absolute inset-0 bg-[url('images/hero-bg.jpg')] opacity-20 bg-cover bg-center"
+      ></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+          <div class="text-center lg:text-left">
+            <h1
+              class="reveal text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight"
+            >
+              Advanced <span class="text-blue-500">Safety</span> Solutions for
+              Mining & Transport
+            </h1>
+            <p
+              class="reveal delay-100 text-gray-300 text-lg mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0"
+            >
+              Specialized provider of high-precision vehicle cameras, safety
+              sensors, and industrial monitoring equipment.
+            </p>
+            <div
+              class="reveal delay-200 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+            >
+              <a
+                href="products.html"
+                class="px-8 py-4 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-700 transition-all shadow-xl shadow-blue-600/20 text-center"
+              >
+                View Products
+              </a>
+              <a
+                href="contact.html"
+                class="px-8 py-4 bg-white/10 text-white border border-white/20 rounded-xl font-bold hover:bg-white/20 transition-all backdrop-blur-md text-center"
+              >
+                Contact Us
+              </a>
+            </div>
+          </div>
+          <div class="hidden lg:block reveal delay-300">
+            <img
+              src="images/hero-img.jpg"
+              alt="BNP Tech Safety"
+              class="rounded-2xl shadow-xl mx-auto"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="py-16 bg-white relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6"
+        >
+          <div class="max-w-2xl">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">
+              Featured Safety Tech
+            </h2>
+            <p class="text-gray-600">
+              Our most reliable monitoring and sensor systems for industrial
+              use.
+            </p>
+          </div>
+          <a
+            href="products.html"
+            class="text-blue-600 font-bold hover:text-blue-700 flex items-center gap-2 transition-all"
+          >
+            View Entire Catalog
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              ></path>
+            </svg>
+          </a>
+        </div>
+
+        <div
+          id="featured-products"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
+        >
+          <!-- Products injected by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">
+            Why Trust BNP Tech?
+          </h2>
+          <div class="w-16 h-1 bg-blue-600 mx-auto rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="reveal bg-white p-8 rounded-2xl shadow-md border border-gray-200 text-center"
+          >
+            <div
+              class="w-14 h-14 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mx-auto mb-6"
+            >
+              <svg
+                class="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Certified Quality</h3>
+            <p class="text-gray-500 text-sm">
+              Our products undergo rigorous testing to meet industrial safety
+              standards.
+            </p>
+          </div>
+
+          <div
+            class="reveal delay-100 bg-white p-8 rounded-2xl shadow-md border border-gray-200 text-center"
+          >
+            <div
+              class="w-14 h-14 bg-green-50 text-green-600 rounded-xl flex items-center justify-center mx-auto mb-6"
+            >
+              <svg
+                class="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 10V3L4 14h7v7l9-11h-7z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Latest Innovation</h3>
+            <p class="text-gray-500 text-sm">
+              We provide state-of-the-art camera and sensor tech for modern
+              industries.
+            </p>
+          </div>
+
+          <div
+            class="reveal delay-200 bg-white p-8 rounded-2xl shadow-md border border-gray-200 text-center"
+          >
+            <div
+              class="w-14 h-14 bg-purple-50 text-purple-600 rounded-xl flex items-center justify-center mx-auto mb-6"
+            >
+              <svg
+                class="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Expert Support</h3>
+            <p class="text-gray-500 text-sm">
+              Professional technical support to help you set up and maintain
+              your systems.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-8 border-t border-white/5">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left"
+      >
+        <div class="reveal grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div
+            class="col-span-1 md:col-span-2 flex flex-col items-center md:items-start"
+          >
+            <div class="flex items-center gap-3 mb-3">
+              <img
+                src="favicon.png"
+                alt="BNP Logo"
+                class="w-8 h-8 rounded-lg brightness-110"
+              />
+              <span class="text-xl font-bold text-white tracking-tighter"
+                >B.N.P Tech Solutions</span
+              >
+            </div>
+            <p class="max-w-sm text-xs leading-relaxed">
+              Specialized provider of mining safety solutions, vehicle cameras,
+              and advanced sensors.
+            </p>
+          </div>
+          <div class="flex flex-col items-center md:items-start">
+            <h4
+              class="text-white font-bold text-[10px] uppercase tracking-[0.2em] mb-4"
+            >
+              Navigation
+            </h4>
+            <ul class="space-y-2 text-xs font-semibold text-slate-500">
+              <li>
+                <a
+                  href="index.html"
+                  class="hover:text-blue-500 transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="hover:text-blue-500 transition-colors"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="products.html"
+                  class="hover:text-blue-500 transition-colors"
+                  >Products</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="hover:text-blue-500 transition-colors"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col items-center md:items-start">
+            <h4
+              class="text-white font-bold text-[10px] uppercase tracking-[0.2em] mb-4"
+            >
+              Contact Intel
+            </h4>
+            <ul class="space-y-2 text-xs font-medium">
+              <li>bnptechsolutions@gmail.com</li>
+              <li>+91 8126062339</li>
+              <li>Ghaziabad, UP, India</li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="mt-8 pt-6 border-t border-white/5 text-[10px] font-bold uppercase tracking-[0.2em] text-slate-600 text-center"
+        >
+          &copy; 2025 B.N.P Tech Solutions. Operational Since 2025.
+        </div>
+      </div>
+    </footer>
+
+    <script src="products.js"></script>
+    <script src="app.js"></script>
+    <script>
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      window.observer = observer;
+
+      document
+        .querySelectorAll(".reveal")
+        .forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>
