@@ -154,7 +154,7 @@ window.showProductDetails = async function (id) {
                 
                 <div class="mt-auto pt-8 border-t border-slate-100 flex flex-col sm:flex-row gap-4">
                     <a href="contact.html" class="flex-grow flex items-center justify-center gap-3 py-5 bg-slate-950 text-white rounded-2xl font-black text-xs uppercase tracking-[0.2em] hover:bg-blue-600 transition-all shadow-xl shadow-slate-900/10 active:scale-[0.98]">
-                        <span>Transmit Inquiry</span>
+                        <span>Contact Us</span>
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                     </a>
                 </div>
