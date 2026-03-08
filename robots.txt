@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://vipulgoel08.github.io/BNPTechSolutions/sitemap.xml
+Sitemap: https://bnptechsolutions.netlify.app/sitemap.xml
